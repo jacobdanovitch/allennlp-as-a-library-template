@@ -1,4 +1,4 @@
-allennlp==0.8.1
+allennlp-models==1.0.0rc3
 pytest-pythonpath
 
 # Checks style, syntax, and other useful errors.
