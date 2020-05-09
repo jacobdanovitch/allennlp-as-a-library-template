@@ -1,0 +1,15 @@
+{
+    "project_name": "My Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    
+    "library_name": "my_library",
+    "library_slug": "{{ cookiecutter.library_name.lower().replace(' ', '_').replace('-', '_') }}",
+    
+    "experiment_name": "{{ cookiecutter.library_slug }}",
+    "data_location": "https://allennlp.s3.amazonaws.com/datasets/sst",
+    "data_reader": "{{ cookiecutter.experiment_name.capitalize() }}DatasetReader",
+    "model": "{{ cookiecutter.experiment_name.capitalize() }}Classifier",
+
+    "project_short_description": "An AllenNLP project created with https://github.com/jacobdanovitch/cookiecutter-allennlp.",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+  }
