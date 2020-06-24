@@ -1,0 +1,2 @@
+allennlp_models
+{{cookiecutter.library_slug}}

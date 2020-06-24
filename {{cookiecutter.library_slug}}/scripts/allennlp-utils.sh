@@ -1,11 +1,11 @@
 function train(){
     SER_DIR=`readlink -m ${2:-/tmp/models}/$1`
     echo "Saving to $SER_DIR."
-    allennlp train "experiments/$1.jsonnet" -s $SER_DIR --include-package {{ cookiecutter.library_slug }} -f
+    allennlp train "experiments/$1.jsonnet" -s $SER_DIR
 }
 
 function evaluate(){
-    allennlp evaluate $1/model.tar.gz $2 --cuda-device=0 --include-package {{ cookiecutter.library_slug }}
+    allennlp evaluate $1/model.tar.gz $2 --cuda-device=0
 }
 
 function predict(){

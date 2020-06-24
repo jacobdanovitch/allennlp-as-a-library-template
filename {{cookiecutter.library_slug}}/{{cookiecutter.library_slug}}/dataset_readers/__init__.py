@@ -1,1 +1,1 @@
-from my_library.dataset_readers.semantic_scholar_papers import SemanticScholarDatasetReader
+from {{cookiecutter.library_slug}}.dataset_readers.semantic_scholar_papers import SemanticScholarDatasetReader
